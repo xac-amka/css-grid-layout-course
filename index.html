@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            /* grid-column-gap: 1em ;
+            grid-row-gap: 1em ; */
+            grid-gap: 1em;
+        }
+        .wrapper > div {
+            background-color: #eee;
+            padding: 1em;
+        }
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex possimus totam asperiores magnam sequi! Tempore quo iusto doloribus non consequatur voluptate, voluptatibus voluptatem nam maiores reiciendis nemo? Rerum voluptatem commodi natus ab corrupti a explicabo quaerat ratione, ex reiciendis enim, rem necessitatibus vitae delectus eligendi harum quo itaque repudiandae porro illo eveniet. Natus, ut optio laborum blanditiis, corporis excepturi quisquam inventore quasi voluptates quia provident unde fuga iste harum veritatis explicabo reprehenderit possimus facere recusandae alias omnis reiciendis delectus porro?
+        </div>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit nihil perspiciatis omnis odit rem ipsa impedit necessitatibus, quam dolorem quod placeat quae voluptas laboriosam nam maxime alias debitis, dolor aut?
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex possimus totam asperiores magnam sequi! Tempore quo iusto doloribus non consequatur voluptate, voluptatibus voluptatem nam maiores reiciendis nemo? Rerum voluptatem commodi natus ab corrupti a explicabo quaerat ratione, ex reiciendis enim, rem necessitatibus vitae delectus eligendi harum quo itaque repudiandae porro illo eveniet. Natus, ut optio laborum blanditiis, corporis excepturi quisquam inventore quasi voluptates quia provident unde fuga iste harum veritatis explicabo reprehenderit possimus facere recusandae alias omnis reiciendis delectus porro?
+        </div>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit nihil perspiciatis omnis odit rem ipsa impedit necessitatibus, quam dolorem quod placeat quae voluptas laboriosam nam maxime alias debitis, dolor aut?
+        </div>
+    </div>
+</body>
+</html>
